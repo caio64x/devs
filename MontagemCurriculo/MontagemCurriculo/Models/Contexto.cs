@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MontagemCurriculo.Mapeamento;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace MontagemCurriculo.Models
 {

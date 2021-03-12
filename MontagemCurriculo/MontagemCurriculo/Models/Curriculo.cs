@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit.Sdk;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace MontagemCurriculo.Models
 {

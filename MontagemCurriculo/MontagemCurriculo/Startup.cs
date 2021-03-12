@@ -47,20 +47,13 @@ namespace MontagemCurriculo
                 });
             //injecao de dependencia para login
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
         }
 
         //é nesse cara que mexe para gerar o banco de dados
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            ///////comunicacao com banco e criação do banco e tabelas
-            //using (var escopo = app.ApplicationServices.GetRequiredService<IServiceProvider>().CreateScope())
-            //{
-            //    var contexto = escopo.ServiceProvider.GetRequiredService<Contexto>();
-            //    //cria sem migrations
-            //    contexto.Database.EnsureCreated();
-            //}
+           
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -74,10 +67,12 @@ namespace MontagemCurriculo
 
             app.UseAuthentication();
             app.UseSession();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
             app.UseRouting();
-            app.UseCookiePolicy();
+
             app.UseAuthorization();
 
 #pragma warning disable CS0618 // O tipo ou membro é obsoleto

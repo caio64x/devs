@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MontagemCurriculo.Models;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace MontagemCurriculo.Mapeamento
 {
