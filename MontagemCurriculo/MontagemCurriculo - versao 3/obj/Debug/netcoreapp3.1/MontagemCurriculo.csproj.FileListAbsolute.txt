@@ -767,7 +767,6 @@ C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\bin\Debug\netcor
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.csprojAssemblyReference.cache
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.AssemblyInfoInputs.cache
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.AssemblyInfo.cs
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.csproj.CoreCompileInputs.cache
