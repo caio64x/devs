@@ -778,7 +778,6 @@ C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcor
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.TagHelpers.output.cache
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.RazorCoreGenerate.cache
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\Curriculos\Create.cshtml.g.cs
-C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\Curriculos\Delete.cshtml.g.cs
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\Curriculos\Details.cshtml.g.cs
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\Curriculos\Edit.cshtml.g.cs
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\Curriculos\Index.cshtml.g.cs
@@ -801,3 +800,4 @@ C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcor
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\TipoCursos\Create.cshtml.g.cs
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\TipoCursos\Edit.cshtml.g.cs
 C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\Razor\Views\TipoCursos\Index.cshtml.g.cs
+C:\facudade\devs\MontagemCurriculo\MontagemCurriculo - versao 3\obj\Debug\netcoreapp3.1\MontagemCurriculo.csprojAssemblyReference.cache

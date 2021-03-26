@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -47,7 +48,6 @@ namespace MontagemCurriculo.Controllers
         // GET: Curriculos/Create
         public IActionResult Create()
         {
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UsuaioID", "Email");
             return View();
         }
 
@@ -58,18 +58,18 @@ namespace MontagemCurriculo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CurriculoID,Nome,UsuarioID")] Curriculo curriculo)
         {
+            curriculo.UsuarioID = int.Parse(HttpContext.Session.GetInt32("UsuarioID").ToString());
             if (ModelState.IsValid)
             {
                 _context.Add(curriculo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UsuaioID", "Email", curriculo.UsuarioID);
             return View(curriculo);
         }
 
         // GET: Curriculos/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+  public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -80,8 +80,7 @@ namespace MontagemCurriculo.Controllers
             if (curriculo == null)
             {
                 return NotFound();
-            }
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UsuaioID", "Email", curriculo.UsuarioID);
+            }           
             return View(curriculo);
         }
 
@@ -92,6 +91,7 @@ namespace MontagemCurriculo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("CurriculoID,Nome,UsuarioID")] Curriculo curriculo)
         {
+            curriculo.UsuarioID = int.Parse(HttpContext.Session.GetInt32("UsuarioID").ToString());
             if (id != curriculo.CurriculoID)
             {
                 return NotFound();
@@ -117,7 +117,6 @@ namespace MontagemCurriculo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UsuarioID"] = new SelectList(_context.Usuarios, "UsuaioID", "Email", curriculo.UsuarioID);
             return View(curriculo);
         }
 
@@ -141,14 +140,13 @@ namespace MontagemCurriculo.Controllers
         }
 
         // POST: Curriculos/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public async Task<JsonResult> Delete(int ID)
         {
-            var curriculo = await _context.Curriculos.FindAsync(id);
+            var curriculo = await _context.Curriculos.FindAsync(ID);
             _context.Curriculos.Remove(curriculo);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return Json(curriculo.Nome + "excluido com sucesso");
         }
 
         private bool CurriculoExists(int id)

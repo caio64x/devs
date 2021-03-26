@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xunit;
 using Xunit.Sdk;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MontagemCurriculo.Models
 {
@@ -15,6 +16,7 @@ namespace MontagemCurriculo.Models
         [Required(ErrorMessage = "Campo obrigtório")]
         [StringLength(50, ErrorMessage = "Use menos caracteres")]
         [EmailAddress(ErrorMessage = "Email inválido")]
+        [Remote("UsuarioExiste","Usuarios")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo obrigtório")]
